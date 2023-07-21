@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="title" content="Muhammad Latif Harkat" />
+  <meta property="og:title" content="Game dapatkan Hati Wanita" />
+  <meta name="description" content="Ayo Dapatkan hati!" />
+  <meta property="og:description" content="Ayo mendapatkan Hati!" />
+  <meta name="author" content="Muhammad Latif Harkat" />
+  <meta property="og:author" content="Muhammad Latif Harkat" />
+  <meta name="copyright" content="Latip176" />
+    
+  <title>Game - Kumpulkan Score!</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+  <h1 align="center">Dapatkan Hati Seseorang!</h1>
+  <p align="center" id="ayo" class="lead">Ayo Dapatkan hati Seseorang!</p>
+  
+  <!-- Informasi -->
+  <div class="info">
+    <div class="info1"><p id="nyawa"></p></div>
+    <div class="info2"><p id="sc"></p></div>
+  </div>
+  <!-- end informasi -->
+  
+  <!-- Arena -->
+  <div class="arena">
+    <!-- container -->
+    <div class="container">
+      <!-- slide 1 player & point settings -->
+      <div class="slide1">
+        <div class="user">
+          <img src="assets/img/kanan.png" id="character" alt="Player Character">
+        </div>
+        <div class="point">
+          <img src="assets/img/heart2.png" alt="Point Score" class="pt">
+        </div>
+      </div>
+      <!-- end slide 1 -->
+      
+      <!-- slide 2 controls settings -->
+      <div class="slide2">
+        <div class="stick">
+          <table cellpadding="10">
+            <tr>
+              <td rowspan="2"><button onclick="controls('kiri')" id="control">←</button></td>
+              <td><button onclick="controls('atas')" id="control">↑</button></td>
+              <td rowspan="2"><button onclick="controls('kanan')" id="control">→</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="controls('bawah')" id="control">↓</button></td>
+            </tr>
+            <tr>
+              <td colspan="3"><button onclick="controls('reset')">RESET</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- end slide 2 -->
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- end arena -->
+  
+  
+  <audio id="playAudio" hidden="hidden">
+    <source src="assets/audio/lagu.mp3" type="audio/mpeg">
+  </audio>
+  
+  
+  <!-- javascript for controler -->
+  <script src="assets/js/controls.js"></script>
+  <!-- end javascript -->
+</body>
+</html>
